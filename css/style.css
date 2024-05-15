@@ -129,13 +129,30 @@ img {
  ************************************************/
 
 /* tablet */
- @media screen and (max-width: 769px){
+ @media screen and (max-width: 1100px){
     
     .container{
         width: 100%;
     }
 
-    .lesson .col img{
-        max-width: 100%;
+}
+
+/* mobile */
+@media screen and (max-width: 500px) {
+
+    .container {
+        width: 80%;
     }
+
+    .row {
+        display: block;
+    }
+
+    .lessons .col,
+    .steps .col,
+    .why-us .col {
+        width: 100%;
+        margin-top: 3rem;
+    }
+
 }
